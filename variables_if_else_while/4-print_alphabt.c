@@ -1,17 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - Print alphabet excluding e & q
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-    char c;
-    for (c = 'a'; c <= 'z'; c++)
-    {
-        if (c != 'e' && c != 'q')
-            putchar(c);
-    }
-    putchar('\n');
-    return (0);
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		if (letter != 'e' && letter != 'q')
+			putchar(letter);
+	}
+
+	putchar('\n');
+	return (0);
 }
