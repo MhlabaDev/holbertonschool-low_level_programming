@@ -1,16 +1,14 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * _islower - Checks for lowercase character
- * Return: 1 if character is lowercase, otherwise return 0
- * @letter: is the variable to be checked for lowercase
+ * _isalpha - Checks for alphabetic character
+ * @letter: The character to check
+ *
+ * Return: 1 if character is a letter, otherwise 0
  */
-
-int _islower(int letter)
+int _isalpha(int letter)
 {
-	if (letter >= 'a' && letter <= 'z')
+	if ((letter >= 'a' && letter <= 'z') || (letter >= 'A' && letter <= 'Z'))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
