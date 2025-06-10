@@ -1,26 +1,23 @@
 #include "main.h"
 #include <unistd.h>
-
 /**
- * more_numbers - prints numbers 0 to 14 * 10s
- * Return: returns the numbers
+ * print_most_numbers - prints numbers 0 to 9.
+ * Return: returns the numbers.
  */
-
-void more_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
-	int j;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (j = 0; j <= 14; j++)
+		if (i == 50 || i == 52)
 		{
-			if (j >= 10)
-			{
-				_putchar((j / 10) + '0');
-			}
-			_putchar((j % 10) + '0');
+			continue;
 		}
-		_putchar('\n');
+		else
+		{
+			_putchar(i);
+		}
 	}
+	_putchar('\n');
 }
