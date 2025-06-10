@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-<<<<<<< HEAD
 	char c[] = "_putchar\n";
 	int i;
 
@@ -17,8 +16,4 @@ int main(void)
 	}
 
 	return (0);
-=======
-    print_alphabet();
-    return (0);
->>>>>>> d2f3dcb (update)
 }
